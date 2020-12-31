@@ -1,20 +1,25 @@
 <template>
   <div id="app">
     <top-navigation />
-    <router-view />
+    <div class="container-fluid">
+      <div class="row">
+        <side-navigation />
+        <router-view />
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
+import SideNavigation from './components/SideNavigation.vue'
 import TopNavigation from './components/TopNavigation.vue'
 export default {
   components: {
-    TopNavigation
+    TopNavigation,
+    SideNavigation
   }
 }
 </script>
 
-<style>
 
-</sty
-TopNavigationle>
+    SideNavigation
